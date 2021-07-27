@@ -1,0 +1,146 @@
+<div class="value left">
+        0</div>
+    <input type="range" min="0" max="180" value="90" >
+    <div class="value right">
+        180</div>
+</div>
+</div>
+
+<!-- p اخترنا اسم للفقرة با استخدام تاق  -->
+
+<p>المحرك السادس</p>
+
+<div class="range">
+<div class="sliderValue">
+    <span>180</span>
+</div>
+<div class="field">
+    <div class="value left">
+        0</div>
+    <input type="range" min="0" max="180" value="90" >
+    <div class="value right">
+        180</div>
+</div>
+</div>
+<br>
+<button type="button" class=btn> حفظ</button>
+<br>
+<button type="button" class="btn"> تشغيل</button>
+<!-- هنا قمنا با استخدام سكربت لجعل الصفحة تعمل بدينامكية 
+عند تحريك الموشر تظهر قيمة المحركات  
+-->
+<script>
+$(document).ready(function () {
+
+    $('input[type="range"]').on('input', function(){
+        var bubble = $(this).parent().parent().find('.sliderValue span');
+        bubble.text($(this).val());
+        bubble.addClass('show');
+        bubble.css('left', $(this).val() / 2 + '%');
+    });
+    
+    $('input[type="range"]').on('blur', function(){
+        $(this).parent().parent().find('.sliderValue span').removeClass('show');
+    });
+
+});
+</script>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<h1>الاتجاهات لقاعدة الروبوت </h1>
+
+<br>
+
+<br>
+<br>
+    <div class="center">
+   
+        <span></span>
+          
+          <table style="width:40%">
+           <tr>
+             <th>  </th>
+             <th>  </th> 
+             <th>  </th>
+           </tr>
+                <tr><td></td>
+             <td>  <div class="center">
+               <div class="outer button">
+               <button>للاعلى</button>
+               <span></span>
+               <span></span>
+               </div>        </td>
+               <td>   </td>
+                 </tr> </div>
+         
+                 <br>
+         
+               <tr>
+             <td></td>  <div class="outer button">
+               <button>لليسار</button>
+               <span></span>
+               <span></span>
+               </div>
+              </div>
+             <br>
+             <br> <br> <br> <br> <br>
+       
+             
+             </td>
+                <td> 
+                 <br><br><br><br>
+       
+                 
+                 <div class="outer circle">
+                   <button>توقف</button>
+                   <span></span>
+                   <span></span>
+                   </div>
+                   </td>
+       
+                <td>
+                  
+                 <br>
+                  <br>
+                  <br>
+                  <br>
+                 <div class="outer button">
+                 <button>لليمين</button>
+                 <span></span>
+                 <span></span>
+                 </div>  
+                  </td>
+                </tr>  </div>
+         
+                 
+                 
+                 <tr>
+       
+       
+                 <td></td>
+             <td>  
+               <br><br><br><br>
+               
+               <div class="outer button">
+               <button>للخلف</button>
+               <span></span>
+               <span></span>
+               </div>
+                 <td> 
+                </td>
+                </tr>
+   
+
+</body>
+</html>
