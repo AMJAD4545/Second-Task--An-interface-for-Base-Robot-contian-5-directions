@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+ background-image: url(https://carss.cc/wp-content/uploads/2020/03/5448.jpg);
+ color: white;
+
+
+}
+
+
+.center{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.outer{
+  position: relative;
+  margin: 0 50px;
+  background: #ffcba4;
+}
+.button{
+  height: 70px;
+  width: 220px;
+  border-radius: 50px;
+}
+.baydawi{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.outer button, .outer span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.outer button{
+  background: #946f6a;
+  color: #a52a2a;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  z-index: 9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.button button{
+  height: 60px;
+  width: 210px;
+  border-radius: 50px;
+}
+.baydawi button{
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+}
+.outer span{
+  height: 100%;
+  width: 100%;
+  background: inherit;
+}
+.button span{
+  border-radius: 50px;
+}
+.baydawi span{
+  border-radius: 50%;
+}
+.outer:hover span:nth-child(1){
+  filter: blur(7px);
+}
+.outer:hover span:nth-child(2){
+  filter: blur(14px);
+}
+.outer:hover{
+  background: linear-gradient(#c2b280,#cd5b45,#ff8c69,#deaa88);
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
